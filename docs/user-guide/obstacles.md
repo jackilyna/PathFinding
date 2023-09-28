@@ -11,7 +11,6 @@ var walkabilityMatrix = [[0, 0, 0, 0, 0],
                          [0, 0, 0, 0, 0]];
 var grid = new PF.Grid(matrix);
 ```
-
 The _walkabilityMatrix_ defines which cells are walkable and which have
 obstacles. Ones are obstacles and zeroes are walkable. Alternatively, you can
 also set the obstacles on the grid by calling the `setWalkableAt` function:
