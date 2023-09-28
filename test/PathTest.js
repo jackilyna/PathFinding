@@ -9,14 +9,12 @@ function pathTest(opt) {
     var name = opt.name,
         finder = opt.finder,
         optimal = opt.optimal;
-
     describe(name, function() {
         var startX, startY, endX, endY, grid, expectedLength,
             width, height, matrix, path, i, scen;
 
         var test = (function() {
             var testId = 0;
-
             return function(startX, startY, endX, endY, grid, expectedLength) {
                 it('should solve maze '+ ++testId, function() {
                     path = finder.findPath(startX, startY, endX, endY, grid);
@@ -29,7 +27,6 @@ function pathTest(opt) {
                 });
             };
         })();
-
         // Load all the scenarios and test against the finder.
         for (i = 0; i < scenarios.length; ++i) {
             scen = scenarios[i];
